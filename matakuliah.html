@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Daftar Mata Kuliah Jurusan Teknik Informatika</title>
+<script type="text/javascript">
+		function loadXMLDoc(filename)
+		{
+			if(window.ActiveXObject)
+			{
+				xhttp= new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			else
+			{
+				xhttp= new XMLHttpRequest();
+			}
+			xhttp.open("GET", filename, false);
+			try {xhttp.responseType= "msxml-document"} catch(err) {}
+			xhttp.send("");
+			return xhttp.responseXML;
+		}
+		
+		function display()
+		{
+			xml = loadXMLDoc("matakuliah.xml");
+			xsl= loadXMLDoc("matakuliah.xsl");
+			
+			if(window.ActiveXObject || xhttp.responseType == "msxml-document")
+			{
+				ex = xml.transformNode(xsl);
+				document.getElementById("example").innerHTML = ex;
+			}
+			else if (document.implementation && document.implementation.createDocument)
+			{
+				xsltProcessor= new XSLTProcessor();
+				xsltProcessor.importStylesheet(xsl);
+				resultDoc = xsltProcessor.transformToFragment(xml, document);
+				document.getElementById("example").appendChild(resultDoc);
+			}
+		}
+	</script>		
+</head>
+
+<body onload= "display()">
+	<div id="example"></div>
+</body>
+</html>
