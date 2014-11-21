@@ -1,4 +1,4 @@
 PTI-2014
 ========
 
-Kumpulan materi 
+Kumpulan materi untuk latihan pembuatan web
