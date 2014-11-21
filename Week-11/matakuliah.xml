@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<matakuliah>
+	<mataku>
+		<kode>TI101</kode>
+		<nama>Matematika Diskrit</nama>
+		<semester>1</semester>
+		<ket>Mahasiswa memahami matematika diskrit dan ilmu komputer.</ket>
+	</mataku>
+	<mataku>
+		<kode>TI202</kode>
+		<nama>Struktur Data</nama>
+		<semester>2</semester>
+		<ket>Mahasiswa memahami tipe data struktur dan abstrak.</ket>
+	</mataku>
+	<mataku>
+		<kode>TI330</kode>
+		<nama>Pengantar Teknologi Internet</nama>
+		<semester>3</semester>
+		<ket>Mahasiswa memahami teknologi web secara luas.</ket>
+	</mataku>
+	<mataku>
+		<kode>TI403</kode>
+		<nama>Sistem Basis Data</nama>
+		<semester>4</semester>
+		<ket>Mahasiswa memahami konsep dan terminologi yang digunakan dalam sistem manajemen basis data.</ket>
+	</mataku>
+	<mataku>
+		<kode>TI405</kode>
+		<nama>Sistem Operasi</nama>
+		<semester>4</semester>
+		<ket>Mahasiswa dapat memahami konsep dasar OS, Linux, maupun Windows.</ket>
+	</mataku>
+</matakuliah>
